@@ -1,0 +1,23 @@
+﻿<Window x:Class="ilinasp_var2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ilinasp_var2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock x:Name="labelDB" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,41,0,0" FontSize="14" Text="Баллы за 'Разработка, администрирование и защита БД' (0-22):"/>
+        <TextBox x:Name="textBoxDB" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="353,85,0,0" Width="100" FontSize="14"/>
+
+        <TextBlock x:Name="labelPS" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="269,141,0,0" FontSize="14" Text="Баллы за 'Разработка модулей ПО' (0-38):"/>
+        <TextBox x:Name="textBoxPS" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="353,187,0,0" Width="100" FontSize="14"/>
+
+        <TextBlock x:Name="labelSO" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="282,247,0,0" FontSize="14" Text="Баллы за 'Сопровождение ПО' (0-20):"/>
+        <TextBox x:Name="textBoxSO" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="353,305,0,0" Width="100" FontSize="14"/>
+
+        <Button x:Name="buttonCalculate" Content="Рассчитать" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="30" Margin="290,354,0,0" FontSize="14" Click="buttonCalculate_Click" RenderTransformOrigin="4.015,0.473"/>
+
+        <TextBlock x:Name="labelResult" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="159,0,0,0" FontSize="14" Width="220" TextWrapping="Wrap"/>
+    </Grid>
+</Window>
